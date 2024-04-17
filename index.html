@@ -9,11 +9,14 @@
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
 </head>
 <body>
-    <header class="header" >
+    <header class="header">
         <nav >
-            <a href="#">
+            <a href="#" class="animate__animated animate__jello">
                 <i class="fas fa-film" aria-hidden="true"></i>
                 <span>CAC-Movies</span>
             </a>
@@ -25,7 +28,7 @@
         </nav>
     </header>
     <main id="main" >
-        <section class="sectionTitulos">
+        <section class="sectionTitulos" data-aos="fade-up">
             <div class="contenedorTitulos">
                 <h1 >Películas y series ilimitadas <br> en un solo lugar</h1>
                 <h2 >Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
@@ -43,7 +46,7 @@
 
         </section>
         <hr>
-        <section id="tendencias" class="peliculasTendencias">
+        <section id="tendencias" class="peliculasTendencias" data-aos="fade-up">
             <h2>Las tendencias de hoy</h2>
             <div class="galeriaTendencias">
                 <div> 
@@ -132,6 +135,10 @@
             <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
         </a>
     </footer>
-   
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

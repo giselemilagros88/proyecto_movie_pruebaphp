@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <style>
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: #181818;
+           /* display: grid;
+            place-items: center;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px
+        }
+        .bolita{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation-name: float;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+        .uno{
+            background-color: rgb(234, 113, 180);
+        }
+        .dos{
+            background-color: rgb(159, 241, 204);
+            animation-delay: 0.5s;
+        }
+        .tres{
+            background-color: rgb(239, 228, 116);
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="bolita uno"></div>
+    <div class="bolita dos"></div>
+    <div class="bolita tres"></div>
+</body>
+</html>
